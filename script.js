@@ -6,7 +6,7 @@ $(document).ready(function () {
 		if(item) {
 			$('#list-items').append("<li><input class='checkbox' type='checkbox'/>" + item + "<a class='remove'>x</a><hr></li>");
 			localStorage.setItem('listItems', $('#list-items').html());
-			$('#todo-list-item').value("");
+			$('#todo-list-item').val("");
 		}
 	});
 	$(document).on('change', '.checkbox', function() {
